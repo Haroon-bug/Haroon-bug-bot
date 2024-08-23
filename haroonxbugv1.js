@@ -156,7 +156,7 @@ isForwarded: true,
 "body": `${ownername}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync(`./XeonMedia/thumb.jpg`),
+"thumbnail": fs.readFileSync(`./xdharoon/thumb.jpg`),
 "sourceUrl": `${link}`}}},
 { quoted: m})
 }
@@ -567,25 +567,25 @@ list.push({
         
 for (let BhosdikaXeon of VoiceNoteXeon) {
 if (budy === BhosdikaXeon) {
-let audiobuffy = fs.readFileSync(`./XeonMedia/audio/${BhosdikaXeon}.mp3`)
+let audiobuffy = fs.readFileSync(`./xdharoon/audio/${BhosdikaXeon}.mp3`)
 XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 }
 }
 for (let BhosdikaXeon of StickerXeon){
 if (budy === BhosdikaXeon){
-let stickerbuffy = fs.readFileSync(`./XeonMedia/sticker/${BhosdikaXeon}.webp`)
+let stickerbuffy = fs.readFileSync(`./xdharoon/sticker/${BhosdikaXeon}.webp`)
 XeonBotInc.sendMessage(m.chat, { sticker: stickerbuffy }, { quoted: m })
 }
 }
 for (let BhosdikaXeon of ImageXeon){
 if (budy === BhosdikaXeon){
-let imagebuffy = fs.readFileSync(`./XeonMedia/image/${BhosdikaXeon}.jpg`)
+let imagebuffy = fs.readFileSync(`./xdharoon/image/${BhosdikaXeon}.jpg`)
 XeonBotInc.sendMessage(m.chat, { image: imagebuffy }, { quoted: m })
 }
 }
 for (let BhosdikaXeon of VideoXeon){
 if (budy === BhosdikaXeon){
-let videobuffy = fs.readFileSync(`./XeonMedia/video/${BhosdikaXeon}.mp4`)
+let videobuffy = fs.readFileSync(`./xdharoon/video/${BhosdikaXeon}.mp4`)
 XeonBotInc.sendMessage(m.chat, { video: videobuffy }, { quoted: m })
 }
 }
@@ -595,7 +595,7 @@ XeonBotInc.sendMessage(from, { document: teks, mimetype: 'application/vnd.androi
 }
 for (let BhosdikaXeon of ApkXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/apk/${BhosdikaXeon}.apk`)
+let buffer = fs.readFileSync(`./xdharoon/apk/${BhosdikaXeon}.apk`)
 sendapk(buffer)
 }
 }
@@ -605,7 +605,7 @@ XeonBotInc.sendMessage(from, { document: teks, mimetype: 'application/zip'}, {qu
 }
 for (let BhosdikaXeon of ZipXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/zip/${BhosdikaXeon}.zip`)
+let buffer = fs.readFileSync(`./xdharoon/zip/${BhosdikaXeon}.zip`)
 sendzip(buffer)
 }
 }
@@ -615,7 +615,7 @@ haikal.sendMessage(from, { document: teks, mimetype: 'application/pdf'}, {quoted
 }
 for (let BhosdikaXeon of DocXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/doc/${BhosdikaXeon}.pdf`)
+let buffer = fs.readFileSync(`./xdharoon/doc/${BhosdikaXeon}.pdf`)
 senddocu(buffer)
 }
 }
@@ -1635,7 +1635,7 @@ break
                 if (VideoXeon.includes(q)) return replygcxeon("The name you entered already exists")
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 VideoXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/video/${q}.mp4`)
+                await fsx.copy(delb, `./xdharoon/video/${q}.mp4`)
                 fs.writeFileSync('./database/autoreply/video.json', JSON.stringify(VideoXeon))
                 fs.unlinkSync(delb)
                 replygcxeon(`Success Adding Video\To View Type ${prefix}listvideo`)
@@ -1648,7 +1648,7 @@ break
                 let wanu = VideoXeon.indexOf(q)
                 VideoXeon.splice(wanu, 1)
                 fs.writeFileSync('./database/autoreply/video.json', JSON.stringify(VideoXeon))
-                fs.unlinkSync(`./XeonMedia/video/${q}.mp4`)
+                fs.unlinkSync(`./xdharoon/video/${q}.mp4`)
                 replygcxeon(`Successfully Deleted Video ${q}`)
             }
             break
@@ -1658,7 +1658,7 @@ break
                 if (ImageXeon.includes(q)) return replygcxeon("The name you entered is already registered in the database")
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 ImageXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/image/${q}.jpg`)
+                await fsx.copy(delb, `./xdharoon/image/${q}.jpg`)
                 fs.writeFileSync('./database/autoreply/image.json', JSON.stringify(ImageXeon))
                 fs.unlinkSync(delb)
                 replygcxeon(`Success In Adding Image\nTo Check Type ${prefix}listimage`)
@@ -1671,7 +1671,7 @@ break
                 let wanu = ImageXeon.indexOf(q)
                 ImageXeon.splice(wanu, 1)
                 fs.writeFileSync('./database/autoreply/image.json', JSON.stringify(ImageXeon))
-                fs.unlinkSync(`./XeonMedia/image/${q}.jpg`)
+                fs.unlinkSync(`./xdharoon/image/${q}.jpg`)
                 replygcxeon(`Successfully Deleted Image ${q}`)
             }
             break
@@ -1681,7 +1681,7 @@ break
                 if (StickerXeon.includes(q)) return replygcxeon("Name Already In Use")
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 StickerXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/sticker/${q}.webp`)
+                await fsx.copy(delb, `./xdharoon/sticker/${q}.webp`)
                 fs.writeFileSync('./database/autoreply/sticker.json', JSON.stringify(StickerXeon))
                 fs.unlinkSync(delb)
                 replygcxeon(`Successfully Adding Sticker\To Check Type ${prefix}liststicker`)
@@ -1694,7 +1694,7 @@ break
                 let wanu = StickerXeon.indexOf(q)
                 StickerXeonBotInc.splice(wanu, 1)
                 fs.writeFileSync('./database/autoreply/sticker.json', JSON.stringify(StickerXeon))
-                fs.unlinkSync(`./XeonMedia/sticker/${q}.webp`)
+                fs.unlinkSync(`./xdharoon/sticker/${q}.webp`)
                 replygcxeon(`Successfully Removed Sticker ${q}`)
             }
             break
@@ -1704,7 +1704,7 @@ break
                 if (VoiceNoteXeon.includes(q)) return replygcxeon("Name Already In Use")
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
                 VoiceNoteXeon.push(q)
-                await fsx.copy(delb, `./XeonMedia/audio/${q}.mp3`)
+                await fsx.copy(delb, `./xdharoon/audio/${q}.mp3`)
                 fs.writeFileSync('./database/autoreply/vn.json', JSON.stringify(VoiceNoteXeon))
                 fs.unlinkSync(delb)
                 replygcxeon(`Success Adding Audio\nTo Check Type ${prefix}listvn`)
@@ -1717,7 +1717,7 @@ break
                 let wanu = VoiceNoteXeon.indexOf(q)
                 VoiceNoteXeon.splice(wanu, 1)
                 fs.writeFileSync('./database/autoreply/vn.json', JSON.stringify(VoiceNoteXeon))
-                fs.unlinkSync(`./XeonMedia/audio/${q}.mp3`)
+                fs.unlinkSync(`./xdharoon/audio/${q}.mp3`)
                 replygcxeon(`Successfully Deleted Audio ${q}`)
             }
             break
@@ -1730,7 +1730,7 @@ let teks = `${text}`
 if (ZipXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 ZipXeon.push(teks)
-await fsx.copy(delb, `./XeonMedia/zip/${teks}.zip`)
+await fsx.copy(delb, `./xdharoon/zip/${teks}.zip`)
 fs.writeFileSync('./database/autoreply/zip.json', JSON.stringify(ZipXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding zip\nTo check type ${prefix}listzip`)
@@ -1747,7 +1747,7 @@ if (!ZipXeon.includes(teks)) return replygcxeon("This name does not exist in the
 let wanu = ZipXeon.indexOf(teks)
 ZipXeon.splice(wanu, 1)
 fs.writeFileSync('./database/autoreply/zip.json', JSON.stringify(ZipXeon))
-fs.unlinkSync(`./XeonMedia/zip/${teks}.zip`)
+fs.unlinkSync(`./xdharoon/zip/${teks}.zip`)
 replygcxeon(`Successfully deleted zip ${teks}`)
 }
 }
@@ -1771,7 +1771,7 @@ let teks = `${text}`
 if (ApkXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 apknye.push(teks)
-await fsx.copy(delb, `./XeonMedia/apk/${teks}.apk`)
+await fsx.copy(delb, `./xdharoon/apk/${teks}.apk`)
 fs.writeFileSync('./database/autoreply/apk.json', JSON.stringify(ApkXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Successful Adding apk\nTo Check type ${prefix}listapk`)
@@ -1788,7 +1788,7 @@ if (!ApkXeon.includes(teks)) return replygcxeon("This name does not exist in the
 let wanu = ApkXeon.indexOf(teks)
 ApkXeon.splice(wanu, 1)
 fs.writeFileSync('./database/autoreply/apk.json', JSON.stringify(ApkXeon))
-fs.unlinkSync(`./XeonMedia/apk/${teks}.apk`)
+fs.unlinkSync(`./xdharoon/apk/${teks}.apk`)
 replygcxeon(`Successfully deleted Apk ${teks}`)
 }
 }
@@ -1812,7 +1812,7 @@ let teks = `${text}`
 if (DocXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 docunye.push(teks)
-await fsx.copy(delb, `./XeonMedia/doc/${teks}.pdf`)
+await fsx.copy(delb, `./xdharoon/doc/${teks}.pdf`)
 fs.writeFileSync('./database/autoreply/doc.json', JSON.stringify(DocXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Successful Adding Pdf\nTo check type ${prefix}listpdf`)
@@ -1829,7 +1829,7 @@ if (!DocXeon.includes(teks)) return replygcxeon("This name does not exist in the
 let wanu = DocApk.indexOf(teks)
 docunye.splice(wanu, 1)
 fs.writeFileSync('./database/autoreply/doc.json', JSON.stringify(DocXeon))
-fs.unlinkSync(`./XeonMedia/doc/${teks}.pdf`)
+fs.unlinkSync(`./xdharoon/doc/${teks}.pdf`)
 replygcxeon(`Successfully deleted pdf ${teks}`)
 }
 }
@@ -2398,7 +2398,7 @@ if (typemenu === 'v1') {
                     })
                     } else if (typemenu === 'v2') {
                     XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XeonMedia/thumb2.mp4'),
+      video: fs.readFileSync('./xdharoon/thumb2.mp4'),
       gifPlayback: true,
       caption: xeonmenuoh,
       contextInfo: {
@@ -2416,7 +2416,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v3') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XeonMedia/thumb2.mp4'),
+                        video: fs.readFileSync('./xdharoon/thumb2.mp4'),
                         caption: xeonmenuoh,
                         gifPlayback: true
                     }, {

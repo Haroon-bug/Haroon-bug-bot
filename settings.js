@@ -40,7 +40,7 @@ global.autoTyping = false //auto typing
 global.autorecordtype = false //auto typing + recording
 global.autoread = false //auto read messages
 global.autobio = false //auto update bio
-global.anti92 = false //auto block +92 
+global.anti212 = true //auto block +92 
 global.autoswview = false //auto view status/story
 
 //menu type 
@@ -48,7 +48,7 @@ global.autoswview = false //auto view status/story
 //v2 is link + image menu,
 //v3 is video menu,
 //v4 is call end menu
-global.typemenu = 'v1'
+global.typemenu = 'v4'
 
 //text bug
 global.xbugtex = {

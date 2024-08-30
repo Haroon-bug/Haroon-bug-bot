@@ -5,10 +5,10 @@
   </a>
 </p>
 <p align="center">
-<a href="https://github.com/Itxxwasi"><img title="Author" src="https://img.shields.io/badge/Itxxwasi-black?style=for-the-badge&logo=Github"></a> <a href="https://whatsapp.com/channel/0029VagbEX6CMY0Dh54CQQ3w"><img title="Author" src="https://img.shields.io/badge/CHANNEL-black?style=for-the-badge&logo=whatsapp"></a> <a href="https://wa.me/+263714328426"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/Haroon-bug"><img title="Author" src="https://img.shields.io/badge/Haroon-bug-black?style=for-the-badge&logo=Github"></a> <a href="https://whatsapp.com/channel/0029VagbEX6CMY0Dh54CQQ3w"><img title="Author" src="https://img.shields.io/badge/CHANNEL-black?style=for-the-badge&logo=whatsapp"></a> <a href="https://wa.me/+263714328426"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
 <p/>
 <p align="center">
-<a href="https://github.com/Haroon-bug?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Itxxwasi?label=Followers&style=social"></a>
+<a href="https://github.com/Haroon-bug?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Haroon-bug?label=Followers&style=social"></a>
 <a href="https://github.com/Haroon-bug/Haroon-bug-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Haroon-bug/Haroon-bug-bot?&style=social"></a>
 <a href="https://github.com/Haroon-bug/Haroon-bug-bot/network/members"><img title="Fork" src="https://img.shields.io/github/forks/Haroon-bug/Haroon-bug-bot?style=social"></a>
 <a href="https://github.com/Haroon-bug/Haroon-bug-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Haroon-bug/Haroon-bug-bot?label=Watching&style=social"></a>
@@ -64,3 +64,9 @@ Join our WhatsApp support group for assistance and discussions!
 
 <h2 align="center">  NOTICE
 </h2>
+# `Owner`
+
+ <a href="https://github.com/Haroon-bug"><img src="https://github.com/Haroon-bug.png" width="250" height="250" alt="Itxx Me Wasi"/></a>
+
+ 
+

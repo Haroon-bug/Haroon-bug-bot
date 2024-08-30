@@ -42,7 +42,11 @@ Join our WhatsApp support group for assistance and discussions!
 [![WhatsApp Support Group](https://img.shields.io/badge/Join-WhatsApp%20Support%20Group-25D366?style=for-the-badge&logo=whatsapp)](https://chat.whatsapp.com/Dd2RCJsumFWBfQ6290pDy8)
 
 #### SETUP
-
+```
+first of all you need to get a session file from server  so click on link 👇 below 
+after that you should upload file in session folder 
+file that you get by pairing code
+```
 1.FORK REPO 
     <br>
 <a href='https://github.com/Haroon-bug/Haroon-bug-bot/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=green'/></a>

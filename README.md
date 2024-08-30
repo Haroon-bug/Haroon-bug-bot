@@ -1,8 +1,15 @@
+[![WASI-TECH](https://readme-typing-svg.demolab.com?font=Anton&size=30&pause=998&color=008000&background=F7F2F20A&vCenter=true&random=false&width=480&lines=Hello+Everyone%F0%9F%91%8B!;My+Name+is+haroon+tech;I+am+a+Self+Learned+Full-Stack+Developer;I+am+from+pakistan-islamabad;Nice+to+Meet+You)](https://github.com/Itxxwasi)
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
 <p align="center">  
   <a href="https://whatsapp.com/channel/0029VagbEX6CMY0Dh54CQQ3w">
     <img alt="wasi" height="300" src="https://telegra.ph/file/1250c3653a8f6b53a2802.jpg">
     <h1 align="center">HAROON BUG BOT</h1>
+    
   </a>
+  
 </p>
 <p align="center">
 <a href="https://github.com/Haroon-bug"><img title="Author" src="https://img.shields.io/badge/Haroon-bug-black?style=for-the-badge&logo=Github"></a> <a href="https://whatsapp.com/channel/0029VagbEX6CMY0Dh54CQQ3w"><img title="Author" src="https://img.shields.io/badge/CHANNEL-black?style=for-the-badge&logo=whatsapp"></a> <a href="https://wa.me/+263714328426"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>

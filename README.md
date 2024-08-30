@@ -58,6 +58,41 @@ Join our WhatsApp support group for assistance and discussions!
     <br>
 <a href='https://replit.com/@mrwasidev/HAROON-X-BUG-PAIR?v=1#main.sh' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=green'/></a>
 </a>
+
+### installation in termux and any other terminal 
+```
+atp update
+   
+
+apt upgrade
+
+pkg update && pkg upgrade
+
+pkg install bash
+
+ pkg install git
+
+ pkg install nodejs
+
+pkg install ffmpeg
+
+pkg install wget
+
+pkg install imagemagick
+
+ pkg install yarn
+
+termux-setup-storage
+```
+```
+git clone https://github.com/Haroon-bug/Haroon-bug-bot
+cd Haroon-bug-bot
+yarn install
+npm start
+```
+
+
+
 ### THANKS TO 
 [MR WASI DEV](https://github.com/Itxxwasi)
  
